@@ -1,0 +1,29 @@
+/* Global styles, regardless of screen size
+
+    Font sizes go in responsive.scss, except rules that use a percentage font-size:x%;
+    Font styles go here;
+    Formatting, like a margin after a paragraph is allowed
+    Complex layout of sections and modules go to their own .scss file
+    Style overrides go to seperate .scss file
+
+*/
+
+* {padding:0; margin:0; font-family:'PT Sans', Helvetica, Arial, sans-serif; color:#333;}
+h1, h2 {font-family:'Oswald'; font-smoothing: antialiased; color:#111;}
+
+.background {background-image:url('../images/background.jpg'); background-position:bottom left; background-repeat:no-repeat; background-color:#fff; background-size:contain; width:100%; height:100%; position:fixed; z-index:-1;}
+nav {background:rgba(255,255,255,.9)}
+a.current {color:#333;}
+nav a, nav a:link {text-decoration:none; color:#460;}
+nav a:active {color:#9a0;}
+nav li a:visted {color:#460;}
+nav a:hover { color:#9a0;}
+nav li {list-style: none;}
+.localNav  a { margin:15px 0; display:block;}
+.localNav  a, .galleryView img {border:1px solid #666; box-shadow: 0px 1px 2px #999;}
+h1 {line-height: 60px;}
+h2 {text-align: right;}
+
+
+/* Fix for the weird border around background */
+.background {width:101%; height:101%; border: 1px solid white; margin-top:-1px;}

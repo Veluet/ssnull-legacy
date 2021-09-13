@@ -1,0 +1,62 @@
+@import "_grids.scss";
+/* No base layout instructions are permitted here
+   Examples:
+        // This image is not a part of the base layout
+        Ok: img.vertical {height:90%; width:auto; margin:0 auto; display:block;}
+
+        // Nor are these navigation items
+        Ok: nav li {float:left; margin-right:20px;}
+
+        // The behaviour to stay within view is a part of the base layout
+        No: header, article {position:fixed;}
+*/
+
+* {font-size:14px;}
+
+@media screen and (min-width:940.1px) {
+    h1 {font-size:63px;}
+    h2 {font-size:31px;}
+    .metaWrapper, .global, nav {padding:20px; background-color:rgba(255,255,255,.9);}
+    .imageThumbnail img {height:auto; width:100%; margin:0 auto; display:block;}
+    .six {padding-top:24px;}
+    img.vertical {height:98%; width:auto; margin:0 2% auto; display:block;}
+    img.horizontal {height:auto; width:100%;display:block; max-height: 100vmin; max-width: 100vmin;}
+    .global nav li {display:block; margin-bottom:10px;}
+    .localNav nav {padding-top:19px; padding-bottom:100px;}
+
+}
+@media screen and (max-width:940px) and (min-width:480px) {
+    div.background {position:absolute; height: 100%; width: 100%; top:100%;}
+    div.background2 {position:absolute;}
+    h1 {font-size:29px; line-height: 30px;}
+    h2 {font-size:15px; }
+    nav li {float:left; margin-right:20px;}
+    .localNav  a {width:40px; display:block; float:left;}
+    .imageThumbnail img {height:auto; width:40px; display:block;}
+    img.vertical {margin:0 auto; display:block; max-width: 42%;}
+    img.horizontal {height:auto; width:100%;display:block;}
+    .metaWrapper {margin:.5em 0;}
+    .metaDescription {float:left;}
+    .copyright {float:right;}
+    nav.two li a {display: block; padding:5px 5px 5px 0; margin:.05em 0;}
+}
+@media screen and (max-width:480px) {
+    .everything {margin-bottom:40px;}
+    div.background {display:none;}
+    div.background2 {position:absolute;}
+    img {display:none;}
+    h1 {font-size:30px; line-height:30px;}
+    h2 {font-size:15px;}
+    .localNav  a {width:40px; display:block; float:left;}
+    .imageThumbnail img {height:auto; width:40px; display:block;}
+    img.vertical {max-width: 100%; width:auto; margin:0 auto; display:block;}
+    img.horizontal {height:auto; max-width:100%;display:block;}
+    .one-half {margin-bottom:.5em;}
+    nav.two ul {border-top:2px outset #A3A3A3; margin:.5em 0;}
+    nav.two li {border-bottom:1px solid #eee;}
+    nav.two li a {display: block; padding: 5px; border-bottom:1px solid #ccc;}
+    .two {padding:0;}
+    .metaWrapper {margin:.5em 0;}
+    .metaDescription {float:left;}
+    .copyright {float:right;}
+}

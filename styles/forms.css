@@ -1,0 +1,11 @@
+* {font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;}
+
+.formItem label {min-width:110px; display:block; float:left;}
+.formItem input, .formItem select, .formItem textarea, .formItem .uploadImage {float:left; margin-bottom:10px; }
+.formItem, .submit, .submit-mini, img.proof {clear:left;}
+.submit {padding-left:100px;}
+.submit input, .submit a {margin-left:25%;}
+.submit-mini input,  .submit-mini a {display:block; text-align:center; margin:10px auto 0;}
+input[name=title], input[name=medium], input[name=alt] {width:25em;}
+input[name=year] {width:4em;}
+img.proof {margin:10px;}

@@ -1,0 +1,34 @@
+* {padding:0; margin:0; font-family:"Akzidenz-Grotesk BQ Condensed", Helvetica, Arial, sans-serif;}
+
+.background {background-image:url('../images/background.jpg'); background-position:left; background-repeat:no-repeat; background-color:#fff; background-size:contain; width:100%; height:100%; position:fixed; z-index:-1;}
+header, .content {display:block;}
+.headerContent {padding:35px 20px 0px 40px; position:fixed; left:0; height:100%; z-index:1; width:40%;}
+h1,h2 {margin-bottom:5px; display:block;}
+.galleryView h2 {position:fixed; left:35%; top:35px;}
+.selectedImage {margin-top:75px; margin-left:35%; z-index:2; height:100%; position:fixed; width:100%;}
+	.selectedImage .imageWrapper1 {width:100%; height:100%;}
+	.selectedImage .imageWrapper2 {width:60%; height:100%;  position:relative;}
+	.selectedImage img {position:absolute;}
+	.selectedImage img.vertical {width:auto; height:80%; border:1px solid #000;}
+	.selectedImage img.horizontal {width:90%; height:auto; border:1px solid #000;}
+.imageSelection {width:5%; right:0; padding-top:77px; z-index:2; position:absolute; margin-right:3%;}
+	.imageThumbnail {position:relative;}
+	.thumbnailMask {position:absolute; left:0px; width:100%; border-left:1px solid white; border-right:1px solid white; border-bottom:16px solid white; background:#fff; z-index:3; display:none;}
+	.imageThumbnail img {border:1px solid black; width:100%; height:auto;} 
+ol,ul {margin-left:20px;}
+nav li {list-style:none; font-size:130%; margin-bottom:15px;}
+nav ol, nav ul {margin-left:0;}
+nav {margin-top:15px;  background:rgba(255,255,255,.9)}
+a.current {color:#333;}
+nav a, nav a:link {text-decoration:none; color:#460;}
+nav a:active {color:#9a0;}
+nav li a:visted {color:#460;} /* :visited is really picky about working.  May be due to an exploit and browsers crudely patching it */
+nav a:hover { color:#9a0;}
+
+h1 {font-size:80px; max-width:30%; line-height:70px;}
+h2 {font-size:40px;}
+
+.loading {background-image:url('../images/loading.gif'); background-position:left; background-repeat:no-repeat; background-color:#fff; background-size:contain; padding:2px 0 0 25px; min-height:16px; display:none; margin-top:10px; position:absolute; top:0;}
+
+/* Fix for the weird border around background */
+.background {width:101%; height:101%; border: 1px solid white; margin-top:-1px;}

@@ -1,0 +1,4 @@
+[15-Apr-2013 21:49:15 America/New_York] PHP Parse error:  syntax error, unexpected '}' in /home/ssnullco/public_html/imageUploadForm.php on line 287
+[16-Apr-2013 13:37:59 America/New_York] PHP Warning:  POST Content-Length of 9725584 bytes exceeds the limit of 8388608 bytes in Unknown on line 0
+[16-Apr-2013 13:38:33 America/New_York] PHP Warning:  POST Content-Length of 9725587 bytes exceeds the limit of 8388608 bytes in Unknown on line 0
+[16-Apr-2013 13:39:42 America/New_York] PHP Warning:  POST Content-Length of 9725593 bytes exceeds the limit of 8388608 bytes in Unknown on line 0

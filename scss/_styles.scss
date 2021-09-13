@@ -1,0 +1,32 @@
+/* Global styles, regardless of screen size
+
+    Font sizes go in responsive.scss, except rules that use a percentage font-size:x%;
+    Font styles go here;
+    Formatting, like a margin after a paragraph is allowed
+    Complex layout of sections and modules go to their own .scss file
+    Style overrides go to seperate .scss file
+
+*/
+
+* {padding:0; margin:0; font-family:'PT Sans', Helvetica, Arial, sans-serif; color:#333;}
+body {background-image:url('../images/tile.png'); background-repeat:repeat-x;}
+.background2 {background-image:url('../images/background.png'); background-repeat:no-repeat; min-height:100%; z-index: -1; position:fixed; top:0; left:0; height:100%; width:100%;}
+h1, h2 {font-family:'Oswald'; font-smoothing: antialiased; color:#111;}
+.subtitle {font-size:90%; color:#666; padding:4px 1px 1px;}
+.background {background-image:url('../images/background-shoddyResize.png'); background-position:bottom left; background-repeat:no-repeat; background-color:#fff; background-size:contain; width:100%; height:100%; position:fixed; z-index:-1;}
+a.current {color:#333;}
+nav a, nav a:link {text-decoration:none; color:#460; font-size:120%;}
+nav a:active {color:#9a0;}
+nav li a:visted {color:#460;}
+nav a:hover { color:#9a0;}
+nav li {list-style: none;}
+.localNav  a { margin:5px; display:block;}
+.localNav  a, .galleryView img {border:1px solid #666; box-shadow: 0px 1px 2px #999;}
+h1 {line-height: 60px;}
+.copyright {padding-top:1em; color:#5A5A5A;}
+.copyright * {font-size:90%; color:#5A5A5A;}
+
+
+
+/* Fix for the weird border around background*/
+/* . background {width:101%; height:101%; border: 1px solid white; margin-top:-1px;}*/
